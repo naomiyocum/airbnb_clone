@@ -7,6 +7,14 @@ body {
   font-family: Poppins;
 }
 
+.grey {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* Navbar */
 
 nav {
@@ -38,4 +46,29 @@ nav {
   margin-top: 0;
   inline-size: 500px;
   font-size: 23px;
+}
+
+/* CARD */
+
+.card {
+  padding: 20px;
+  line-height: 10px;
+}
+
+.card>img {
+  border-radius: 10px;
+}
+
+.card--rating {
+  display: flex;
+  align-items: center;
+}
+
+.card--rating > img {
+  height: 14px;
+}
+
+.card--rating {
+  display: flex;
+  align-items: center;
 }
