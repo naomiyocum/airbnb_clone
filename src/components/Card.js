@@ -9,15 +9,15 @@ export default function Card(props) {
   return (
     <div className="card">
       {badgeText && <div className="card--badge">{badgeText}</div>}
-      <img className="card--image" src={require(`../images/${props.item.coverImg}`)} alt="Katie"/>
+      <img className="card--image" src={require(`../images/${props.coverImg}`)} alt="Katie"/>
       <div className="card--stats">
         <img className="card--star" src={require("../images/star.png")} alt="star"/>
-        <span>{props.item.stats.rating}</span>
-        <span className="grey">({props.item.stats.reviewCount}).</span>
-        <span className="grey">{props.item.location}</span>
+        <span>{props.stats.rating}</span>
+        <span className="grey">({props.stats.reviewCount}).</span>
+        <span className="grey">{props.location}</span>
       </div>
-      <p className="card--title">{props.item.title}</p>
-      <p className="card--price"><span className="bold">From ${props.item.price} </span>/ person</p>
+      <p className="card--title">{props.title}</p>
+      <p className="card--price"><span className="bold">From ${props.price} </span>/ person</p>
     </div>
   )
 }
