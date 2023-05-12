@@ -1,6 +1,14 @@
 export default function Card(props) {
+  let badgeText
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT"
+  } else if (props.location === "Online") {
+    badgeText = "ONLINE"
+  }
+
   return (
     <div className="card">
+      {badgeText && <div className="card--badge">{badgeText}</div>}
       <img className="card--image" src={require(`../images/${props.img}`)} alt="Katie"/>
       <div className="card--stats">
         <img className="card--star" src={require("../images/star.png")} alt="star"/>
