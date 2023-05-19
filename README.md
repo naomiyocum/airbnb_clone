@@ -1,4 +1,4 @@
-# Naomi's Digital Business Card
+# Airbnb Clone
 
 ![GitHub language count](https://img.shields.io/github/languages/count/naomiyocum/digital-business-card)
 ![GitHub top language](https://img.shields.io/github/languages/top/naomiyocum/digital-business-card?color=yellow)
